@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The idea of Constraint propagation is repeated application of the constraint as many times as possible until a solution is obtained, or the constraint can no longer be used to improve the solution. 
+Naked Twins is one of the best ways to improve the solvability of the sudoku. This identifies a pair of boxes corresponding to the same set of peers with same two numbers as possibilities and eliminate these values from all boxes that have these two boxes under consideration as peers. Naked twins is used together with eliminate and only-choice mentioned in the course to reduce the total number of probabilities.
+
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The best way to solve diagonal sudoku I set the diagonal constraint as a part of normal sudoku solver. Because of this, all the diagonal entries will have the corresponding diagonal entries as their peers. This will solve the diagonal constraint by not accepting the values that doesn’t solve the criteria. 
 
 ### Install
 
@@ -24,10 +26,10 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 
 ### Code
 
-* `solution.py` - Fill in the required functions in this file to complete the project.
-* `test_solution.py` - You can test your solution by running `python -m unittest`.
-* `PySudoku.py` - This is code for visualizing your solution.
-* `visualize.py` - This is code for visualizing your solution.
+* `solution.py` - You'll fill this in as part of your solution.
+* `solution_test.py` - Do not modify this. You can test your solution by running `python solution_test.py`.
+* `PySudoku.py` - Do not modify this. This is code for visualizing your solution.
+* `visualize.py` - Do not modify this. This is code for visualizing your solution.
 
 ### Visualizing
 
